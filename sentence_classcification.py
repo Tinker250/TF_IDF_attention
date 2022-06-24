@@ -47,7 +47,7 @@ arg_to_scheduler = {
 arg_to_scheduler_choices = sorted(arg_to_scheduler.keys())
 arg_to_scheduler_metavar = "{" + ", ".join(arg_to_scheduler_choices) + "}"
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = '1'
+os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 
 def calc_f1(y_pred:torch.Tensor, y_true:torch.Tensor) -> torch.Tensor:
     tp = (y_true * y_pred).sum().to(torch.float32)

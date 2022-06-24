@@ -12,6 +12,6 @@ python sentence_classcification.py \
         --num_labels 2 \
         --is_small \
         --version 9 \
-        # --test_checkpoint /hci/junchen_data/longformer/longformer/model_output/version_10/checkpoints/longformer_original_mask_1.ckpt \
+        # --test_checkpoint /hci/junchen_data/TF_IDF_attention/model_output/version_10/checkpoints/longformer_original_mask_1.ckpt \
         # --test_only \
         
